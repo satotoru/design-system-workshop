@@ -2,6 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Button from '../components/Button';
+import Text from '../components/Text';
 
 storiesOf('Button', module)
   .add('with text', () => (
@@ -10,3 +11,9 @@ storiesOf('Button', module)
   .add('with some emoji', () => (
     <Button onClick={action('clicked')}><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Button>
   ));
+
+
+storiesOf('Text', module)
+  .add('default', () => (
+    <Text>Hello Text</Text>
+  ))
